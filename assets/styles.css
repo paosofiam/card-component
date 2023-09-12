@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "HankenGrotesk-Bold";
+  src: url("/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HankenGrotesk-ExtraBold";
+  src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "HankenGrotesk-Medium";
+  src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+:root {
+  /*Screen widths*/
+  --mobileW: 375px;
+  --desktopW: 1440px;
+  /*Border radius*/
+  --cardRadius: 20px;
+  --circleRadius: 50px;
+  --boxRadius: 10px;
+  --buttonRadius: 15px;
+  /*Primary colors*/
+  --lRed: hsl(0, 100%, 67%);
+  --oYellow: hsl(39, 100%, 56%);
+  --greenT: hsl(166, 100%, 37%);
+  --cBlue: hsl(234, 85%, 45%);
+  /*Transparency solors*/
+  --lRedBack: hsla(0, 100%, 67%, 0.1);
+  --oYellowBack: hsla(39, 100%, 56%, 0.1);
+  --greenTBack: hsla(166, 100%, 37%, 0.1);
+  --cBlueBack: hsla(234, 85%, 45%, 0.1);
+  /*Neutral colors*/
+  --whitex: hsl(0, 0%, 100%);
+  --pBlue: hsl(221, 100%, 96%);
+  --lLavender: hsl(241, 100%, 89%);
+  --dGrayB: hsl(224, 30%, 27%);
+  /*Gradient colors*/
+  /*Background*/
+  --slateBlue: hsl(252, 100%, 67%);
+  --royalBlue: hsl(241, 81%, 54%);
+  /*Circle*/
+  --violetBlue: hsla(256, 72%, 46%, 1);
+  --persianBlue: hsla(241, 72%, 46%, 0);
+  /*Font variables*/
+  --fontSizeP: 18px;
+  --fontWeight1: 500;
+  --fontWeight2: 700;
+  --fontWeight3: 800;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*Feel free to remove these styles or customise in your own stylesheet 👍*/
+h1 {
+  font-family: "HankenGrotesk-Bold";
+}
+
+ul {
+  list-style: none;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--boxRadius);
+}
+.divList {
+  display: flex;
+  flex-direction: row;
+}
+.item1 {
+  background-color: var(--lRedBack);
+  color: var(--lRed);
+}
+.item2 {
+  background-color: var(--oYellowBack);
+  color: var(--oYellow);
+}
+.item3 {
+  background-color: var(--greenTBack);
+  color: var(--greenT);
+}
+.item4 {
+  background-color: var(--cBlueBack);
+  color: var(--cBlue);
+}
+
+.resultNumber {
+  color: var(--dGrayB);
+}
+.fromNumber {
+  color: var(--lLavender);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
