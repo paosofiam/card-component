@@ -247,6 +247,9 @@ li {
 }
 
 .submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   width: var(--textWidth2);
   min-width: var(--minTextWidth2);
@@ -256,8 +259,11 @@ li {
   border-radius: 30px;
   font-family: "HankenGrotesk-Medium";
   font-size: 19px;
+  line-height: 22px;
   color: var(--whitex);
   transition: 1000ms ease-out;
+  text-decoration: none;
+  text-align: center;
 }
 .submitButton:hover {
   transition: 1000ms ease-out;
@@ -275,7 +281,7 @@ li {
 
 /*Feel free to remove these styles or customise in your own stylesheet 👍*/
 footer {
-  position: static;
+  position: absolute;
   bottom: 0;
   width: 100vw;
   margin: 0;
@@ -283,6 +289,7 @@ footer {
   border: none;
   background: lightsteelblue;
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
