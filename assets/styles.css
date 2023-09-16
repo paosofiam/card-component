@@ -76,24 +76,23 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.divMain {
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  border: none;
-  box-sizing: border-box;
-  height: 100vh;
-  overflow: scroll;
 }
 
 main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /*bottom: var(--cardOffsetT);
-  right: var(--cardOffsetL);*/
   width: var(--totalWidth);
   min-width: var(--minWidth);
   height: var(--cardHeight);
@@ -278,14 +277,11 @@ li {
 footer {
   position: static;
   bottom: 0;
-  left: 0;
-  right: 0;
   width: 100vw;
   margin: 0;
   padding: 0;
   border: none;
   background: lightsteelblue;
-  bottom: 0;
 }
 .attribution {
   font-size: 11px;
