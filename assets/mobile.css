@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "HankenGrotesk-Bold";
+    src: url("/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "HankenGrotesk-ExtraBold";
+    src: url("/assets/fonts/static/HankenGrotesk-ExtraBold.ttf")
+      format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "HankenGrotesk-Medium";
+    src: url("/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+  }
+  :root {
+    /*Screen widths*/
+    --mobileW: 375px;
+    --desktopW: 1440px;
+    /*Dimensions and Border radius*/
+    --totalWidth: 50vw;
+    --cardWidth: calc(var(--totalWidth) / 2);
+    --cardHeight: 70vh;
+    --cardOffsetT: calc((100vh - (var(--cardHeight))) / 2);
+    --cardOffsetL: calc((100vw - (var(--totalWidth))) / 2);
+    --cardRadius: 20px;
+    --textWidth: calc(var(--cardWidth) * (4 / 6));
+    --textWidth2: calc(var(--cardWidth) * 0.8);
+    --listHeight: calc(var(--cardHeight) * 0.52);
+  
+    --minWidth: 600px;
+    --minCard: calc(var(--minWidth) / 2);
+    --minTextWidth: calc(var(--minCard) * (4 / 6));
+    --minTextWidth2: calc(var(--minCard) * 0.81);
+    --minHeight: 400px;
+    --minListHeight: 220px;
+  
+    --circleDiameter: calc(var(--cardWidth) * 0.55);
+    --circleRadius: calc(var(--circleDiameter) / 2);
+    --minDiameter: 150px;
+    --minRadius: calc(var(--minDiameter) / 2);
+    --boxRadius: 10px;
+    --buttonRadius: 15px;
+    /*Primary colors*/
+    --lRed: hsl(0, 100%, 67%);
+    --oYellow: hsl(39, 100%, 56%);
+    --greenT: hsl(166, 100%, 37%);
+    --cBlue: hsl(234, 85%, 45%);
+    /*Transparency solors*/
+    --listTransparency: 0.05;
+    --lRedBack: hsla(0, 100%, 67%, var(--listTransparency));
+    --oYellowBack: hsla(39, 100%, 56%, var(--listTransparency));
+    --greenTBack: hsla(166, 100%, 37%, var(--listTransparency));
+    --cBlueBack: hsla(234, 85%, 45%, var(--listTransparency));
+    /*Neutral colors*/
+    --whitex: hsl(0, 0%, 100%);
+    --pBlue: hsl(221, 100%, 96%);
+    --lLavender: hsl(241, 100%, 89%);
+    --dGrayB: hsl(224, 30%, 27%);
+    /*Gradient colors*/
+    /*Background*/
+    --slateBlue: hsl(252, 100%, 67%);
+    --royalBlue: hsl(241, 81%, 54%);
+    /*Circle*/
+    --violetBlue: hsla(256, 72%, 46%, 1);
+    --persianBlue: hsla(241, 72%, 46%, 0);
+    /*Font variables*/
+    --fontSizeP: 18px;
+    --fontWeight1: 500;
+    --fontWeight2: 700;
+    --fontWeight3: 800;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .divMain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--totalWidth);
+    min-width: var(--minWidth);
+    height: var(--cardHeight);
+    min-height: var(--minHeight);
+    border-radius: var(--cardRadius);
+    background-color: var(--whitex);
+    box-shadow: 5px 5px 10px 0 var(--lLavender);
+  }
+  p {
+    margin: 15px;
+    text-align: center;
+  }
+  img {
+    margin-left: 15px;
+  }
+  
+  .mainCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: var(--cardWidth);
+    min-width: var(--minCard);
+    height: var(--cardHeight);
+    min-height: var(--minHeight);
+    margin: 0;
+    background: linear-gradient(var(--slateBlue), var(--royalBlue));
+    border-radius: var(--cardRadius);
+  }
+  
+  .resultTitle {
+    margin: 0;
+    width: var(--textWidth);
+    min-width: var(--minTextWidth);
+    text-align: center;
+    font-family: "HankenGrotesk-Medium";
+    font-size: 22px;
+    color: var(--lLavender);
+  }
+  .bigCircle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(var(--violetBlue), var(--persianBlue));
+    width: var(--circleDiameter);
+    min-width: var(--minDiameter);
+    height: var(--circleDiameter);
+    min-height: var(--minDiameter);
+    border-radius: var(--circleRadius);
+  }
+  .totalResult {
+    margin: 0;
+    font-family: "HankenGrotesk-Bold";
+    font-size: 70px;
+    color: var(--whitex);
+  }
+  .fromResult {
+    margin: 0;
+    font-family: "HankenGrotesk-Medium";
+    font-size: 20px;
+    color: var(--slateBlue);
+  }
+  
+  .resultAdjective {
+    margin: 0;
+    font-family: "HankenGrotesk-Bold";
+    font-size: 34px;
+    color: var(--whitex);
+  }
+  .resultText {
+    width: var(--textWidth);
+    min-width: var(--minTextWidth);
+    text-align: center;
+    font-family: "HankenGrotesk-Medium";
+    margin: 0;
+    font-size: 18.5px;
+    color: var(--lLavender);
+  }
+  
+  .summaryCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: var(--cardWidth);
+    min-width: var(--minCard);
+    height: var(--cardHeight);
+    min-height: var(--minHeight);
+  }
+  .summaryTitle {
+    margin: 0;
+    width: var(--textWidth2);
+    min-width: var(--minTextWidth2);
+    text-align: start;
+    font-family: "HankenGrotesk-Medium";
+    font-size: 24px;
+    color: var(--dGrayB);
+  }
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--textWidth);
+    min-width: var(--minTextWidth2);
+    height: var(--listHeight);
+    min-height: var(--minListHeight);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "HankenGrotesk-Medium";
+    font-size: 19px;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: var(--textWidth2);
+    min-width: var(--minTextWidth2);
+    justify-content: space-between;
+    margin: 0;
+    border-radius: var(--boxRadius);
+  }
+  .divList {
+    display: flex;
+    flex-direction: row;
+  }
+  .item1 {
+    background-color: var(--lRedBack);
+    color: var(--lRed);
+  }
+  .item2 {
+    background-color: var(--oYellowBack);
+    color: var(--oYellow);
+  }
+  .item3 {
+    background-color: var(--greenTBack);
+    color: var(--greenT);
+  }
+  .item4 {
+    background-color: var(--cBlueBack);
+    color: var(--cBlue);
+  }
+  
+  .resultNumber {
+    color: var(--dGrayB);
+  }
+  .fromNumber {
+    color: var(--lLavender);
+  }
+  
+  .submitButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: var(--textWidth2);
+    min-width: var(--minTextWidth2);
+    padding: 0;
+    border: none;
+    background-color: var(--dGrayB);
+    border-radius: 30px;
+    font-family: "HankenGrotesk-Medium";
+    font-size: 19px;
+    line-height: 22px;
+    color: var(--whitex);
+    transition: 1000ms ease-out;
+    text-decoration: none;
+    text-align: center;
+  }
+  .submitButton:hover {
+    transition: 1000ms ease-out;
+    padding: 2px;
+    box-shadow: 0 0 7px 1px var(--greenT);
+    color: var(--greenT);
+    cursor: pointer;
+  }
+  .submitButton:active {
+    background: linear-gradient(var(--slateBlue), var(--royalBlue));
+    transition: 0s ease-out;
+    box-shadow: none;
+    color: var(--whitex);
+  }
+  
+  /*Feel free to remove these styles or customise in your own stylesheet 👍*/
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: lightsteelblue;
+  }
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  
+  @media (max-width: 1250px) {
+    .bigCircle {
+      border-radius: var(--minRadius);
+    }
+  }
+  
