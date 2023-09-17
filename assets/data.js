@@ -1,4 +1,4 @@
-[
+const data =`
   {
     "category": "Reaction",
     "score": 80,
@@ -19,4 +19,4 @@
     "score": 72,
     "icon": "./assets/images/icon-visual.svg"
   }
-]
+  `;
