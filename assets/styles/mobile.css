@@ -1,0 +1,28 @@
+.divMain {
+  justify-content: start;
+}
+
+main {
+  flex-direction: column;
+}
+
+.mainCard {
+  width: var(--totalWidth);
+  height: var(--minHeight);
+  /*min-height: 500px;*/
+  border-radius: 0 0 var(--cardRadius) var(--cardRadius);
+}
+
+.bigCircle {
+  width: var(--circleDiameter);
+  min-width: var(--minDiameter);
+  height: var(--circleDiameter);
+  min-height: var(--minDiameter);
+  border-radius: var(--circleRadius);
+}
+
+.summaryCard {
+  width: var(--totalWidth);
+  height: var(--cardHeight);
+  min-height: var(--minHeight);
+}

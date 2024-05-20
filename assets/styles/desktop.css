@@ -1,0 +1,34 @@
+.divMain {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+}
+
+main {
+  flex-direction: row;
+  min-width: var(--minWidth);
+  height: var(--cardHeight);
+  min-height: var(--minHeight);
+  border-radius: var(--cardRadius);
+  box-shadow: 5px 5px 10px 0 var(--lLavender);
+}
+
+.mainCard {
+  width: var(--cardWidth);
+  min-width: var(--minCard);
+  height: var(--cardHeight);
+  min-height: var(--minHeight);
+  border-radius: var(--cardRadius);
+}
+
+.summaryCard {
+  width: var(--cardWidth);
+  min-width: var(--minCard);
+  height: var(--cardHeight);
+  min-height: var(--minHeight);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
