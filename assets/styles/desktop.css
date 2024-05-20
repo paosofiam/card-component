@@ -29,6 +29,11 @@ main {
 }
 
 footer {
-  position: sticky;
+  position: absolute;
   bottom: 0;
+}
+@media (max-height: 400px) {
+  footer {
+    position: sticky;
+  }
 }
