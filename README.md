@@ -9,6 +9,9 @@ Este es un proyecto realizado con HTML, CSS y JavaScript.
 Puedes visualizarlo en la siguiente liga:
 [Demo by Paola Mendoza](https://card-component-paosofiam.netlify.app/)
 
+También puedes ver el diseño original la siguiente liga:
+[Frontend Mentor | Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
+
 # Acerca de mí
 Entusiasta de la ciencia y la tecnología, soy una profesional técnica, creativa, comprometida y proactiva, además de una persona empática, social y responsable. A pesar de haberme formado como Ingeniera Aeronáutica, actualmente me desempeño como Desarrolladora Web Jr, y me enfoco en el diseño web.
 
