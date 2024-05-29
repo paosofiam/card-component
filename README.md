@@ -7,7 +7,7 @@
 Este es un proyecto realizado con HTML, CSS y JavaScript.
 
 Puedes visualizarlo en la siguiente liga:
-[Demo by Paola Mendoza](https://card-component-paosofiam.netlify.app/)
+[Demo by Paola Mendoza](https://paosofiam-results-summary-component.netlify.app/)
 
 También puedes ver el diseño original en la siguiente liga:
 [Frontend Mentor | Results summary component](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
