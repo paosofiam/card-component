@@ -1,19 +1,19 @@
 @font-face {
     font-family: "HankenGrotesk-Bold";
-    src: url("/../fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
+    src: url("../fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: "HankenGrotesk-ExtraBold";
-    src: url("/../fonts/static/HankenGrotesk-ExtraBold.ttf")
+    src: url("../fonts/static/HankenGrotesk-ExtraBold.ttf")
       format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: "HankenGrotesk-Medium";
-    src: url("/../fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+    src: url("../fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
